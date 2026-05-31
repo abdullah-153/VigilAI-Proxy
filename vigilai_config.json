@@ -1,0 +1,18 @@
+{
+    "enable_prompt_injection": true,
+    "enable_pii_detection": true,
+    "enable_toxicity_filter": true,
+    "enable_hallucination_guard": true,
+    "pii_action": "redact",
+    "scan_email": true,
+    "scan_ssn": true,
+    "scan_credit_card": true,
+    "scan_phone": true,
+    "scan_ip": true,
+    "injection_sensitivity": 0.5,
+    "toxicity_threshold": 0.6,
+    "upstream_model": "openai/gpt-4o",
+    "openai_api_key": "",
+    "default_temperature": 0.7,
+    "mock_llm_mode": true
+}
