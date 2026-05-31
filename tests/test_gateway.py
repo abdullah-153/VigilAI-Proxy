@@ -16,7 +16,7 @@ def client():
 # ==========================================================================
 
 def test_api_gateway_health(client):
-    """Verify backend proxy is online and serves config rules."""
+    """Verify VigilAI proxy is online and serves config rules."""
     try:
         response = client.get("/api/config")
         assert response.status_code == 200

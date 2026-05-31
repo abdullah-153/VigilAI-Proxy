@@ -9,10 +9,10 @@ from pydantic import BaseModel
 from typing import Optional, List, Dict, Any
 from datetime import datetime, timedelta
 
-from backend.config import active_config, ProxyConfig
-from backend.database import init_db, get_db, ProxyLog, add_proxy_log
-from backend.guardrails import detect_and_handle_pii, evaluate_prompt_injection, evaluate_toxicity, evaluate_hallucination
-from backend.mock_llm import mock_completion_sync, mock_completion_stream
+from app.config import active_config, ProxyConfig
+from app.database import init_db, get_db, ProxyLog, add_proxy_log
+from app.guardrails import detect_and_handle_pii, evaluate_prompt_injection, evaluate_toxicity, evaluate_hallucination
+from app.mock_llm import mock_completion_sync, mock_completion_stream
 
 # Import litellm safely
 try:

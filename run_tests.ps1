@@ -17,7 +17,7 @@ pip install -r requirements-test.txt
 
 # 2. Starting FastAPI application server
 Write-Host "[2/4] Spin up FastAPI gateway in the background..." -ForegroundColor Green
-$serverProc = Start-Process python -ArgumentList "-m uvicorn backend.main:app --host 127.0.0.1 --port 8000" -PassThru -NoNewWindow
+$serverProc = Start-Process python -ArgumentList "-m uvicorn app.main:app --host 127.0.0.1 --port 8000" -PassThru -NoNewWindow
 
 Write-Host "Waiting 3 seconds for server boot..." -ForegroundColor Yellow
 Start-Sleep -Seconds 3

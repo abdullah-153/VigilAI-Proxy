@@ -1,7 +1,7 @@
 import re
 import base64
 from typing import Dict, Tuple, List
-from backend.config import active_config
+from app.config import active_config
 
 # Regex patterns for PII scanner
 EMAIL_REGEX = re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b')
